@@ -1,0 +1,25 @@
+[project]
+name = "llm-zoomcamp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rhett Lavender", email = "55471993+rhettlavender@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "minsearch>=0.2.0",
+    "openai>=3.57.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "sqlitesearch>=0.3.0",
+]
+
+[project.scripts]
+llm-zoomcamp = "llm_zoomcamp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
